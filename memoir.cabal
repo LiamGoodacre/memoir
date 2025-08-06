@@ -13,6 +13,22 @@ common warnings
 library
     import:           warnings
     exposed-modules:  Memoir
-    build-depends:    base ^>=4.21.0.0
+    build-depends:
+      , base ^>=4.21.0.0
+      , constraints
+      , ghc-prim
     hs-source-dirs:   src
     default-language: GHC2021
+    default-extensions:
+      DataKinds,
+      TypeFamilies,
+      TypeFamilyDependencies,
+      AllowAmbiguousTypes,
+      ImplicitParams,
+      UndecidableInstances,
+      DerivingStrategies,
+      BlockArguments,
+      ViewPatterns,
+      UndecidableSuperClasses,
+      TypeAbstractions,
+      OverloadedRecordDot
